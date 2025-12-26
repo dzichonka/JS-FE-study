@@ -38,7 +38,7 @@ export function createElement<T extends keyof HTMLElementTagNameMap>(
     style,
   } = options;
 
-  let element = <HTMLElementTagNameMap[T]>document.createElement(tag);
+  let element = document.createElement(tag);
   element = document.createElement(tag);
   element.textContent = text;
 
